@@ -1,4 +1,5 @@
 /*
+!.gitignore
+!README
 !Akvo.php
 !akvo/**/*
-!.gitignore
