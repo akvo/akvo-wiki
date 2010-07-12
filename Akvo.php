@@ -148,7 +148,56 @@ class AkvoTemplate extends QuickTemplate {
 */?>
 <body<?php if($this->data['body_ondblclick']) { ?> ondblclick="<?php $this->text('body_ondblclick') ?>"<?php } ?>
 <?php if($this->data['body_onload']) { ?> onload="<?php $this->text('body_onload') ?>"<?php } ?>
- class="mediawiki <?php $this->text('dir') ?> <?php $this->text('pageclass') ?> <?php $this->text('skinnameclass') ?>">
+ class="mediawiki <?php $this->text('dir') ?> <?php $this->text('pageclass') ?> <?php $this->text('skinnameclass') ?>">	
+---------------------
+<div id="header">
+	<div id="header_container" class="container">
+		<ul id="main_nav">
+			<li>
+				<a id="main_nav_left" href="/">
+					<span>
+						<img src="<?php $this->text('stylepath') ?>/akvo/img/main_nav_akvo_logo.png" width="82" height="20" alt="Akvo.org" />
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="/wiki/" class="active">
+					<span>Akvopedia</span>
+				</a>
+			</li>
+			<li>
+				<a href="/web/partners">
+					<span>Partners</span>
+				</a>
+			</li>
+			<li>
+				<a href="/rsr/projects/">
+					<span>Projects</span>
+				</a>
+			</li>
+			<li>
+				<a href="/web/get_involved/">
+					<span>Get involved</span>
+				</a>
+			</li>
+			<li>
+				<a href="/blog/">
+					<span>Blog</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="main_container" class="container">
+	<div class="span-18" style="margin-bottom:20px;">
+		<div class="span-3 first">
+			<p>In left container</p>
+		</div>
+		<div class="span-15 last">
+			<p>In right container</p>
+		</div>
+	</div>
+</div>
 	<div id="globalWrapper">
 		<div id="column-content">
 	<div id="content">
@@ -360,7 +409,7 @@ class AkvoTemplate extends QuickTemplate {
 				<li id="t-ispermalink"<?php echo $this->skin->tooltip('t-ispermalink') ?>><?php $this->msg('permalink') ?></li><?php
 		}
 
-		wfRunHooks( 'MonoBookTemplateToolboxEnd', array( &$this ) );
+		//wfRunHooks( 'MonoBookTemplateToolboxEnd', array( &$this ) );
 		wfRunHooks( 'SkinTemplateToolboxEnd', array( &$this ) );
 ?>
 			</ul>
