@@ -34,6 +34,7 @@ class SkinAkvo extends SkinTemplate {
 
 		// Append to the default screen common & print styles...
 		$out->addStyle( 'akvo/style.css', 'screen' );
+		/*
 		if( $wgHandheldStyle ) {
 			// Currently in testing... try 'chick/main.css'
 			$out->addStyle( $wgHandheldStyle, 'handheld' );
@@ -45,6 +46,7 @@ class SkinAkvo extends SkinTemplate {
 		$out->addStyle( 'akvo/IE70Fixes.css', 'screen', 'IE 7' );
 
 		$out->addStyle( 'akvo/rtl.css', 'screen', '', 'rtl' );
+		*/
 	}
 }
 
