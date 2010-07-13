@@ -24,7 +24,6 @@ class SkinAkvo extends SkinTemplate {
 		$this->skinname  = 'akvo';
 		$this->stylename = 'akvo';
 		$this->template  = 'AkvoTemplate';
-
 	}
 
 	function setupSkinUserCss( OutputPage $out ) {
@@ -34,7 +33,7 @@ class SkinAkvo extends SkinTemplate {
 
 		// Append to the default screen common & print styles...
 		$out->addStyle( 'akvo/style.css', 'screen' );
-		/*
+
 		if( $wgHandheldStyle ) {
 			// Currently in testing... try 'chick/main.css'
 			$out->addStyle( $wgHandheldStyle, 'handheld' );
@@ -46,7 +45,6 @@ class SkinAkvo extends SkinTemplate {
 		$out->addStyle( 'akvo/IE70Fixes.css', 'screen', 'IE 7' );
 
 		$out->addStyle( 'akvo/rtl.css', 'screen', '', 'rtl' );
-		*/
 	}
 }
 
@@ -79,8 +77,10 @@ class AkvoTemplate extends QuickTemplate {
 	<meta name="description" content="We help donors and doers reach out to fund many thousands of new water and sanitation projects." />
 	<meta name="keywords" content="akvo, Akvo, akvo.org, Akvo.org, water, sanitation" />
 	<title>Akvopedia -  <?php $this->text('pagetitle') ?></title>
-	<?php $this->html('csslinks') ?>
+	<?php /* $this->html('csslinks') */?>
 
+	<link rel="stylesheet" href="<?php $this->text('stylepath') ?>/akvo/style.css" type="text/css" media="screen" title="akvo" charset="utf-8">
+	
 	<!--[if lt IE 7]><script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath') ?>/common/IEFixes.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"></script>
 	<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
 		
@@ -150,7 +150,7 @@ class AkvoTemplate extends QuickTemplate {
 		
 		<div class="white_box">
 			<div class="space20" style="min-height:250px;">
-				<h5><?php $this->msg('views') ?></h5>
+				<h5><?php /* $this->msg('views') */ ?></h5>
 				<div style="float:left; widht:160px;">
 					<?php
 						$sidebar = $this->data['sidebar'];
