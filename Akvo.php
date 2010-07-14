@@ -108,7 +108,7 @@ class AkvoTemplate extends QuickTemplate {
 		if($this->data['trackbackhtml']) print $this->data['trackbackhtml']; ?>
 		
 		<style type="text/css" media="screen">
-			#header_container {
+			#header_container, #footer_container {
 				width: 975px;
 			  	margin: 0 auto;
 				font-family:Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
