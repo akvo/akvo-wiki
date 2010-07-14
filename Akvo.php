@@ -107,11 +107,71 @@ class AkvoTemplate extends QuickTemplate {
 <?php	}
 		if($this->data['trackbackhtml']) print $this->data['trackbackhtml']; ?>
 		
+		<style type="text/css" media="screen">
+			#header_container {
+				width: 975px;
+			  	margin: 0 auto;
+				font-family:Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+				}
+		
+			#globalWrapper {
+				margin-top:45px;
+				font-size:14px;
+				}
+				
+			#p-cactions, #p-personal {
+				margin-top:45px;
+				}
+			a { 
+			    color:#2B80AF;
+			    cursor:pointer;
+			    text-decoration:none;
+			    }
+			a:visited { color:#2B80AF; }
+			a:hover { color:#0FA0CB; text-decoration: underline; }
+			#header ul {
+				color:#333;
+				line-height:1.7em;
+				margin-bottom:0.5em; 
+				margin-bottom:1.5em;   
+				margin-top:-0.5em;    
+			    }
+			
+		</style>
+		
 		<link rel="stylesheet" href="<?php $this->text('stylepath') ?>/akvo/style.css" type="text/css" media="screen" title="akvo" charset="utf-8">
+		
+		
 	</head>
 <body<?php if($this->data['body_ondblclick']) { ?> ondblclick="<?php $this->text('body_ondblclick') ?>"<?php } ?>
 <?php if($this->data['body_onload']) { ?> onload="<?php $this->text('body_onload') ?>"<?php } ?>
  class="mediawiki <?php $this->text('dir') ?> <?php $this->text('pageclass') ?> <?php $this->text('skinnameclass') ?>">
+<div id="header" style="font-size:14px;">
+	<div id="header_container" class="container">
+		<ul id="main_nav">
+			<li>
+				<a id="main_nav_left" href="/"><span>
+					<img src="<?php $this->text('stylepath') ?>/akvo/img/main_nav_akvo_logo.png" width="82" height="20" alt="Akvo.org" />
+				</span></a>
+			</li>
+			<li>
+				<a href="/wiki/" class="active"><span>Akvopedia</span></a>
+			</li>
+			<li>
+				<a href="/web/partners"><span>Partners</span></a>
+			</li>
+			<li>
+				<a href="/rsr/projects/"><span>Projects</span></a>
+			</li>
+			<li>
+				<a href="/web/get_involved/"><span>Get involved</span></a>
+			</li>
+			<li>
+				<a href="/blog/"><span>Blog</span></a>
+			</li>
+		</ul>
+	</div>
+</div>
 	<div id="globalWrapper">
 		<div id="column-content">
 	<div id="content">
@@ -178,9 +238,11 @@ class AkvoTemplate extends QuickTemplate {
 		</div>
 	</div>
 	<div class="portlet" id="p-logo">
+		<?php /*
 		<a style="background-image: url(<?php $this->text('logopath') ?>);" <?php
 			?>href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href'])?>"<?php
 			echo $skin->tooltipAndAccesskey('p-logo') ?>></a>
+		*/?>
 	</div>
 	<script type="<?php $this->text('jsmimetype') ?>"> if (window.isMSIE55) fixalpha(); </script>
 <?php
