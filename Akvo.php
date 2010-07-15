@@ -84,7 +84,6 @@ class AkvoTemplate extends QuickTemplate {
 		
 		<!--[if lt IE 7]><script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath') ?>/common/IEFixes.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"></script>
 		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
-
 		<?php print Skin::makeGlobalVariablesScript( $this->data ); ?>
 
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/common/wikibits.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script>
@@ -122,6 +121,9 @@ class AkvoTemplate extends QuickTemplate {
 				
 			#p-cactions, #p-personal, #p-logo {
 				margin-top:50px;
+				}
+			#p-logo {
+				height:40px; max-height:40px;
 				}
 			a { 
 			    color:#2B80AF;
