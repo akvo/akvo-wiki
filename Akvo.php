@@ -118,7 +118,6 @@ class AkvoTemplate extends QuickTemplate {
 				font-size:13px;
 				line-height:19px;
 				}
-			
 			div#p-cactions {
 				margin-top:47px;
 				}	
@@ -142,25 +141,21 @@ class AkvoTemplate extends QuickTemplate {
 				margin-bottom:1.5em;   
 				margin-top:-0.5em;    
 			    }
-			
-			#footer {
+			#footer2 {
 			    background:#F9F9FA url(<?php $this->text('stylepath') ?>/akvo/img/footer_gradient.png) repeat-x top;
 			    color:#585E68;
 			    padding-top:40px;
 				text-align:left;
 				font-size:14px;
+				border:none;
 			    }
-
-			#footer h3, #footer h2  {
+			#footer2 h3, #footer2 h2  {
 			    color: #585E68;
 				border:none;
 			    }
 			
 		</style>
-		
 		<link rel="stylesheet" href="<?php $this->text('stylepath') ?>/akvo/style.css" type="text/css" media="screen" title="akvo" charset="utf-8">
-		
-		
 	</head>
 <body<?php if($this->data['body_ondblclick']) { ?> ondblclick="<?php $this->text('body_ondblclick') ?>"<?php } ?>
 <?php if($this->data['body_onload']) { ?> onload="<?php $this->text('body_onload') ?>"<?php } ?>
@@ -323,7 +318,7 @@ class AkvoTemplate extends QuickTemplate {
 
 -->
 <?php endif; ?>
-<div id="footer">
+<div id="footer2">
 	<div id="footer_container" class="container">
 		<div class="span-18">
 			<h2>About Akvo.org</h2>
