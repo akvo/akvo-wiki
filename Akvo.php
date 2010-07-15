@@ -118,7 +118,10 @@ class AkvoTemplate extends QuickTemplate {
 				font-size:13px;
 				line-height:19px;
 				}
-				
+			
+			div#p-cactions {
+				margin-top:47px;
+				}	
 			#p-cactions, #p-personal, #p-logo {
 				margin-top:50px;
 				}
