@@ -112,7 +112,6 @@ class AkvoTemplate extends QuickTemplate {
 			  	margin: 0 auto;
 				font-family:Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
 				}
-		
 			#globalWrapper {
 				margin-top:45px;
 				font-size:13px;
@@ -153,7 +152,6 @@ class AkvoTemplate extends QuickTemplate {
 			    color: #585E68;
 				border:none;
 			    }
-			
 		</style>
 		<link rel="stylesheet" href="<?php $this->text('stylepath') ?>/akvo/style.css" type="text/css" media="screen" title="akvo" charset="utf-8">
 	</head>
