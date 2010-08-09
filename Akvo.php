@@ -167,16 +167,16 @@ class AkvoTemplate extends QuickTemplate {
 				</span></a>
 			</li>
 			<li>
-				<a href="/wiki/" class="active"><span>Akvopedia</span></a>
+				<a href="/rsr/projects/"><span>Projects</span></a>
 			</li>
 			<li>
 				<a href="/web/partners"><span>Partners</span></a>
 			</li>
 			<li>
-				<a href="/rsr/projects/"><span>Projects</span></a>
-			</li>
+				<a href="/wiki/" class="active"><span>Akvopedia</span></a>
+			</li>			
 			<li>
-				<a href="/web/get_involved/"><span>Get involved</span></a>
+				<a href="/web/get_involved/"><span>About</span></a>
 			</li>
 			<li>
 				<a href="/blog/"><span>Blog</span></a>
