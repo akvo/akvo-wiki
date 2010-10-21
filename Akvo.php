@@ -170,6 +170,9 @@ class AkvoTemplate extends QuickTemplate {
 				<a href="/rsr/projects/"><span>Projects</span></a>
 			</li>
 			<li>
+				<a href="/web/focus-areas/"><span>Focus Areas</span></a>
+			</li>
+			<li>
 				<a href="/web/partners"><span>Partners</span></a>
 			</li>
 			<li>
