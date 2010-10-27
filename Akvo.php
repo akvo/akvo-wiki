@@ -152,6 +152,9 @@ class AkvoTemplate extends QuickTemplate {
 			    color: #585E68;
 				border:none;
 			    }
+			#footer_problem_link:visited {
+			    color:#A5000F;
+			    }
 		</style>
 		<link rel="stylesheet" href="<?php $this->text('stylepath') ?>/akvo/style.css" type="text/css" media="screen" title="akvo" charset="utf-8">
 	</head>
@@ -390,7 +393,7 @@ class AkvoTemplate extends QuickTemplate {
 					<a href="http://help.akvo.org/">Help + support</a><br />
 					<a href="/web/contact_us">Contact info</a><br />
 					<br />
-					<a class="red" href="http://help.akvo.org/discussion/new">Report a problem</a><br />
+					<a id="footer_problem_link" class="red" href="http://help.akvo.org/discussion/new">Report a problem</a><br />
 				</p>
 			</div>
 		</div>
